@@ -1,9 +1,3 @@
-/**
- * product-card.js – Web Component personalizado para tarjetas de producto
- * Encapsula estructura y estilos con Shadow DOM.
- * Atributos: nombre, precio, descripcion, imagen
- */
-
 class ProductCard extends HTMLElement {
   static get observedAttributes() {
     return ['nombre', 'precio', 'descripcion', 'imagen'];
@@ -14,14 +8,19 @@ class ProductCard extends HTMLElement {
     this.attachShadow({ mode: 'open' });
   }
 
-  connectedCallback() { this.render(); }
-  attributeChangedCallback() { this.render(); }
+  connectedCallback() { 
+    this.render(); 
+  }
+
+  attributeChangedCallback() { 
+    this.render(); 
+  }
 
   render() {
-    const nombre      = this.getAttribute('nombre')      || 'Producto';
-    const precio      = this.getAttribute('precio')      || '$0';
+    const nombre = this.getAttribute('nombre') || 'Producto';
+    const precio = this.getAttribute('precio') || '$0';
     const descripcion = this.getAttribute('descripcion') || '';
-    const imagen      = this.getAttribute('imagen')      || '';
+    const imagen = this.getAttribute('imagen') || '';
 
     this.shadowRoot.innerHTML = `
       <style>
@@ -34,6 +33,7 @@ class ProductCard extends HTMLElement {
           overflow: hidden;
           transition: transform .25s, border-color .25s, box-shadow .25s;
         }
+        
         .wc-card:hover {
           transform: translateY(-4px);
           border-color: #00e676;
@@ -46,12 +46,13 @@ class ProductCard extends HTMLElement {
           height: 200px;
           overflow: hidden;
         }
+        
         .wc-img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          display: block;
         }
+        
         .wc-badge {
           position: absolute;
           top: 10px;
@@ -65,7 +66,9 @@ class ProductCard extends HTMLElement {
           border-radius: 4px;
         }
 
-        .wc-body { padding: 16px; }
+        .wc-body { 
+          padding: 16px; 
+        }
 
         .wc-name {
           font-size: 1.1rem;
@@ -74,22 +77,26 @@ class ProductCard extends HTMLElement {
           letter-spacing: 1px;
           margin-bottom: 6px;
         }
+        
         .wc-desc {
           font-size: 0.88rem;
           color: #7a7a9a;
           margin-bottom: 14px;
           line-height: 1.5;
         }
+        
         .wc-footer {
           display: flex;
           align-items: center;
           justify-content: space-between;
         }
+        
         .wc-price {
           font-size: 1.2rem;
           font-weight: 700;
           color: #00e676;
         }
+        
         .btn-add {
           background: transparent;
           border: 1px solid var(--color-accent, #00e676);
@@ -102,6 +109,7 @@ class ProductCard extends HTMLElement {
           cursor: pointer;
           transition: background .2s, color .2s;
         }
+        
         .btn-add:hover {
           background: var(--color-accent, #00e676);
           color: #000;
@@ -123,6 +131,19 @@ class ProductCard extends HTMLElement {
         </div>
       </div>
     `;
+
+    const btn = this.shadowRoot.querySelector('.btn-add');
+    if (btn) {
+      btn.onclick = (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        this.dispatchEvent(new CustomEvent('agregar-producto', {
+          detail: { nombre, precio, descripcion, imagen },
+          bubbles: true,
+          composed: true
+        }));
+      };
+    }
   }
 }
 

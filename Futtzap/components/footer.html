@@ -1,20 +1,30 @@
 <!-- components/footer.html -->
 <footer class="app-footer">
-  <p>&copy; 2026 <strong>Futtzap</strong>. Todos los derechos reservados.</p>
-  <p class="footer-sub">Proyecto educativo – Desarrollo Web · Universidad</p>
+  <div class="footer-content">
+    <p>&copy; 2026 <strong>Futtzap</strong>. Todos los derechos reservados.</p>
+    <p class="footer-sub">Proyecto educativo – Desarrollo Web · Universidad</p>
+    <p class="footer-message">Hecho con ❤️ por el equipo Futtzap</p>
+  </div>
 </footer>
 
 <style>
   .app-footer {
-    height: 52px;
     background: var(--color-surface);
     border-top: 1px solid var(--color-border);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 28px;
+    justify-content: center;
+    padding: 24px 28px;
     font-size: 0.85rem;
     color: var(--color-muted);
+  }
+
+  .footer-content {
+    text-align: center;
+  }
+
+  .app-footer p {
+    margin: 4px 0;
   }
 
   .app-footer strong { color: var(--color-accent); }
@@ -22,5 +32,12 @@
   .footer-sub {
     font-size: 0.78rem;
     opacity: 0.6;
+  }
+
+  .footer-message {
+    font-size: 0.82rem;
+    color: var(--color-accent);
+    font-weight: 500;
+    margin-top: 8px;
   }
 </style>
