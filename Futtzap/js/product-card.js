@@ -90,18 +90,22 @@ class ProductCard extends HTMLElement {
           font-weight: 700;
           color: #00e676;
         }
-        .wc-btn {
-          background: #00e676;
-          color: #000;
-          border: none;
-          font-weight: 700;
-          font-size: 0.85rem;
-          padding: 7px 16px;
-          border-radius: 6px;
+        .btn-add {
+          background: transparent;
+          border: 1px solid var(--color-accent, #00e676);
+          color: var(--color-accent, #00e676);
+          font-family: var(--font-body, Arial, sans-serif);
+          font-weight: 600;
+          font-size: 0.9rem;
+          padding: 6px 14px;
+          border-radius: var(--radius, 4px);
           cursor: pointer;
-          transition: background .2s;
+          transition: background .2s, color .2s;
         }
-        .wc-btn:hover { background: #00b85c; }
+        .btn-add:hover {
+          background: var(--color-accent, #00e676);
+          color: #000;
+        }
       </style>
 
       <div class="wc-card">
@@ -114,7 +118,7 @@ class ProductCard extends HTMLElement {
           <div class="wc-desc">${descripcion}</div>
           <div class="wc-footer">
             <span class="wc-price">${precio}</span>
-            <button class="wc-btn">Ver más ⚡</button>
+            <button class="btn-add">Agregar ⚡</button>
           </div>
         </div>
       </div>
