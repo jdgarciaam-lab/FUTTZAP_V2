@@ -7,22 +7,23 @@ Proyecto web modularizado desarrollado como actividad académica para la asignat
 ## 📁 Estructura del proyecto
 
 ```
-Futtzap/
-├── login.html              # Página de inicio de sesión
-├── index.html              # Página principal de la tienda
-├── css/
-│   ├── styles.css          # Estilos globales
-│   └── login.css           # Estilos específicos del login
-├── js/
-│   ├── login.js            # Lógica de autenticación
-│   ├── main.js             # Lógica principal (fragmentos, fetch, template)
-│   └── product-card.js     # Web Component personalizado
 ├── components/
 │   ├── header.html         # Fragmento de encabezado
 │   ├── sidebar.html        # Fragmento de barra lateral
 │   └── footer.html         # Fragmento de pie de página
+├── css/
+│   ├── styles.css          # Estilos globales
+│   └── login.css           # Estilos específicos del login
 ├── data/
 │   └── products.json       # Datos de productos (usado con Fetch API)
+├── img/
+│   └── productos.png       # imagenes de productos 
+├── js/
+│   ├── login.js            # Lógica de autenticación
+│   ├── main.js             # Lógica principal (fragmentos, fetch, template)
+│   └── product-card.js     # Web Component personalizado
+├── index.html              # Página principal de la tienda
+├── login.html              # Página de inicio de sesión
 └── README.md
 ```
 
