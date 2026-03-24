@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Futtzap – Tienda</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- Fragmento: encabezado -->
+  <div id="header-container"></div>
+
+  <div class="app-layout">
+    <!-- Fragmento: barra lateral -->
+    <div id="sidebar-container"></div>
+
+    <main class="main-content" id="mainContent">
+      <section class="hero-section">
+        <h2 class="hero-title">Nueva Temporada</h2>
+        <p class="hero-sub">Las mejores zapatillas para conquistar el campo</p>
+      </section>
+
+      <!-- Grilla de productos -->
+      <section class="products-section">
+        <h3 class="section-title">Nuestros Productos</h3>
+        <div class="products-grid" id="productsGrid"></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Fragmento: pie de página -->
+  <div id="footer-container"></div>
+
+  <!-- Template de producto (renderizado con cloneNode en main.js) -->
+  <template id="product-template">
+    <div class="product-card">
+      <div class="product-img-wrap">
+        <img class="product-img" src="" alt=""/>
+        <span class="product-badge">NEW</span>
+      </div>
+      <div class="product-info">
+        <h4 class="product-name"></h4>
+        <p class="product-desc"></p>
+        <div class="product-footer">
+          <span class="product-price"></span>
+          <button class="btn-add">Agregar ⚡</button>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- Web Component personalizado -->
+  <script src="js/product-card.js"></script>
+  <!-- Lógica principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>

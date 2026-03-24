@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nombre": "Nike Mercurial Vapor 16",
+    "descripcion": "Velocidad extrema para césped natural. Suela AG optimizada.",
+    "precio": "$580.000",
+    "emoji": "🟢",
+    "marca": "Nike"
+  },
+  {
+    "id": 2,
+    "nombre": "Adidas Predator Elite",
+    "descripcion": "Control total del balón. Tecnología Controlskin en el empeine.",
+    "precio": "$620.000",
+    "emoji": "⚫",
+    "marca": "Adidas"
+  },
+  {
+    "id": 3,
+    "nombre": "Puma Future 7 Ultimate",
+    "descripcion": "Ajuste personalizado con sistema de encaje FUZIONFIT+.",
+    "precio": "$495.000",
+    "emoji": "🔵",
+    "marca": "Puma"
+  },
+  {
+    "id": 4,
+    "nombre": "Nike Phantom GX Elite",
+    "descripcion": "Precisión quirúrgica. Ideal para mediocampistas creativos.",
+    "precio": "$650.000",
+    "emoji": "🟡",
+    "marca": "Nike"
+  },
+  {
+    "id": 5,
+    "nombre": "Adidas Copa Pure 2+",
+    "descripcion": "Cuero genuino kangaroo. Clásico para césped natural.",
+    "precio": "$540.000",
+    "emoji": "⚽",
+    "marca": "Adidas"
+  },
+  {
+    "id": 6,
+    "nombre": "New Balance Furon v7+",
+    "descripcion": "Estabilidad y velocidad en superficie dura. Suela FG.",
+    "precio": "$460.000",
+    "emoji": "🔴",
+    "marca": "New Balance"
+  }
+]

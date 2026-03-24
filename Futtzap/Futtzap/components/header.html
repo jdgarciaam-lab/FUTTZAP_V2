@@ -1,0 +1,78 @@
+<!-- components/header.html -->
+<header class="app-header">
+  <div class="header-brand">
+    <span class="header-icon">⚽</span>
+    <span class="header-name">FUTTZAP</span>
+  </div>
+  <nav class="header-nav">
+    <a href="index.html">Inicio</a>
+    <a href="#productsGrid">Productos</a>
+    <button class="btn-logout" onclick="cerrarSesion()">Salir</button>
+  </nav>
+</header>
+
+<style>
+  .app-header {
+    height: 64px;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .header-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-icon { font-size: 1.4rem; }
+
+  .header-name {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+    color: var(--color-accent);
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .header-nav a {
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-muted);
+    transition: color 0.25s;
+  }
+
+  .header-nav a:hover { color: var(--color-accent); }
+
+  .btn-logout {
+    background: transparent;
+    border: 1px solid var(--color-error);
+    color: var(--color-error);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 6px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: background 0.25s, color 0.25s;
+  }
+
+  .btn-logout:hover {
+    background: var(--color-error);
+    color: #fff;
+  }
+</style>

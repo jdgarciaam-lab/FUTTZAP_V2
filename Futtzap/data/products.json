@@ -1,0 +1,83 @@
+[
+  {
+    "id": 1,
+    "nombre": "Nike Mercurial Vapor 16",
+    "descripcion": "Velocidad extrema para césped natural. Suela FG de alto rendimiento.",
+    "precio": "$580.000",
+    "imagen": "img/producto1.png",
+    "marca": "Nike",
+    "categoria": "cesped"
+  },
+  {
+    "id": 2,
+    "nombre": "Adidas Predator Elite FG",
+    "descripcion": "Control total del balón en césped natural. Tecnología Controlskin.",
+    "precio": "$620.000",
+    "imagen": "img/producto2.png",
+    "marca": "Adidas",
+    "categoria": "cesped"
+  },
+  {
+    "id": 3,
+    "nombre": "New Balance Furon v7+ FG",
+    "descripcion": "Estabilidad y velocidad en césped natural. Horma estrecha.",
+    "precio": "$460.000",
+    "imagen": "img/producto3.png",
+    "marca": "New Balance",
+    "categoria": "cesped"
+  },
+  {
+    "id": 4,
+    "nombre": "Nike Phantom GX Elite AG",
+    "descripcion": "Precisión quirúrgica en terreno sintético. Suela AG adaptada.",
+    "precio": "$650.000",
+    "imagen": "img/producto4.png",
+    "marca": "Nike",
+    "categoria": "sintetico"
+  },
+  {
+    "id": 5,
+    "nombre": "Adidas Copa Pure 2+ AG",
+    "descripcion": "Cuero genuino kangaroo. Comodidad superior en cancha sintética.",
+    "precio": "$540.000",
+    "imagen": "img/producto5.png",
+    "marca": "Adidas",
+    "categoria": "sintetico"
+  },
+  {
+    "id": 6,
+    "nombre": "Max Sport Raptor AG",
+    "descripcion": "Alto rendimiento en sintético. Diseño colombiano de calidad.",
+    "precio": "$380.000",
+    "imagen": "img/producto6.png",
+    "marca": "Max Sport",
+    "categoria": "sintetico"
+  },
+  {
+    "id": 7,
+    "nombre": "Nike Street Gato IC",
+    "descripcion": "Ideal para microfútbol en duela o concreto. Suela IC plana.",
+    "precio": "$420.000",
+    "imagen": "img/producto7.png",
+    "marca": "Nike",
+    "categoria": "microfutbol"
+  },
+  {
+    "id": 8,
+    "nombre": "Adidas Sala IC",
+    "descripcion": "Agarre preciso en superficies duras. Clásico para microfútbol.",
+    "precio": "$395.000",
+    "imagen": "img/producto8.png",
+    "marca": "Adidas",
+    "categoria": "microfutbol"
+  },
+  {
+    "id": 9,
+    "nombre": "Max Sport Indoor Pro",
+    "descripcion": "Suela de goma especial para canchas de microfútbol. Gran tracción.",
+    "precio": "$320.000",
+    "imagen": "img/producto9.png",
+    "marca": "Max Sport",
+    "categoria": "microfutbol"
+  }
+]

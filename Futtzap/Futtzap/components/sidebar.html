@@ -1,0 +1,56 @@
+<!-- components/sidebar.html -->
+<aside class="app-sidebar">
+  <nav class="sidebar-nav">
+    <p class="sidebar-label">Categorías</p>
+    <a href="#" class="sidebar-link active">🏆 Todo</a>
+    <a href="#" class="sidebar-link">🏃 Velocidad</a>
+    <a href="#" class="sidebar-link">🛡️ Defensa</a>
+    <a href="#" class="sidebar-link">🌿 Césped Natural</a>
+    <a href="#" class="sidebar-link">🏟️ Sintético</a>
+    <a href="#" class="sidebar-link">👶 Junior</a>
+
+    <p class="sidebar-label" style="margin-top:28px;">Marcas</p>
+    <a href="#" class="sidebar-link">Nike</a>
+    <a href="#" class="sidebar-link">Adidas</a>
+    <a href="#" class="sidebar-link">Puma</a>
+    <a href="#" class="sidebar-link">New Balance</a>
+  </nav>
+</aside>
+
+<style>
+  .app-sidebar {
+    width: 220px;
+    min-width: 220px;
+    background: var(--color-surface);
+    border-right: 1px solid var(--color-border);
+    padding: 28px 0;
+  }
+
+  .sidebar-nav { display: flex; flex-direction: column; }
+
+  .sidebar-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-muted);
+    padding: 0 20px;
+    margin-bottom: 8px;
+  }
+
+  .sidebar-link {
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 10px 20px;
+    border-left: 3px solid transparent;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+  }
+
+  .sidebar-link:hover,
+  .sidebar-link.active {
+    background: rgba(0, 230, 118, 0.07);
+    border-left-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+</style>

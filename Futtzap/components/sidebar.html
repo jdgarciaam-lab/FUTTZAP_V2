@@ -1,0 +1,68 @@
+<!-- components/sidebar.html -->
+<aside class="app-sidebar">
+  <nav class="sidebar-nav">
+    <p class="sidebar-label">Categorías</p>
+    <a class="sidebar-link active" data-cat="todo">🏆 Todo</a>
+    <a class="sidebar-link" data-cat="cesped">🌿 Césped Natural</a>
+    <a class="sidebar-link" data-cat="sintetico">🏟️ Sintético</a>
+    <a class="sidebar-link" data-cat="microfutbol">👟 Microfútbol</a>
+
+    <p class="sidebar-label" style="margin-top:28px;">Marcas</p>
+    <span class="sidebar-brand">Nike</span>
+    <span class="sidebar-brand">Adidas</span>
+    <span class="sidebar-brand">Max Sport</span>
+    <span class="sidebar-brand">New Balance</span>
+  </nav>
+</aside>
+
+<style>
+  .app-sidebar {
+    width: 220px;
+    min-width: 220px;
+    background: var(--color-surface);
+    border-right: 1px solid var(--color-border);
+    padding: 28px 0;
+  }
+
+  .sidebar-nav { display: flex; flex-direction: column; }
+
+  .sidebar-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--color-muted);
+    padding: 0 20px;
+    margin-bottom: 8px;
+  }
+
+  .sidebar-link {
+    display: block;
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 10px 20px;
+    border-left: 3px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+  }
+
+  .sidebar-link:hover,
+  .sidebar-link.active {
+    background: rgba(0, 230, 118, 0.07);
+    border-left-color: var(--color-accent);
+    color: var(--color-accent);
+  }
+
+  .sidebar-brand {
+    display: block;
+    color: var(--color-muted);
+    font-size: 0.88rem;
+    font-weight: 500;
+    padding: 7px 20px;
+    border-left: 3px solid transparent;
+    cursor: default;
+    user-select: none;
+  }
+</style>
