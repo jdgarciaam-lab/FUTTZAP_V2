@@ -157,10 +157,10 @@ tarjeta.setAttribute('nombre', 'Nike Mercurial');
 
 ## 👥 Integrantes del grupo
 
-| Nombre | GitHub |
-|--------|--------|
-| Estudiante 1 | @usuario1 |
-| Estudiante 2 | @usuario2 |
+|            Nombre             | Codigo |     Usuario    |
+|-------------------------------|--------|----------------|
+| Juan David Garcia Amaya       | 192595 | jdgarciaam-lab |
+| John Sebastian Galvis Sanjuan | 192617 | John081117     |
 
 ---
 

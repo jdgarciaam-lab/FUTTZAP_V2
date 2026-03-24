@@ -52,19 +52,6 @@ class ProductCard extends HTMLElement {
           height: 100%;
           object-fit: cover;
         }
-        
-        .wc-badge {
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          background: #7c4dff;
-          color: #fff;
-          font-size: 0.68rem;
-          font-weight: 700;
-          letter-spacing: 1px;
-          padding: 2px 8px;
-          border-radius: 4px;
-        }
 
         .wc-body { 
           padding: 16px; 
@@ -119,7 +106,6 @@ class ProductCard extends HTMLElement {
       <div class="wc-card">
         <div class="wc-img-wrap">
           <img class="wc-img" src="${imagen}" alt="${nombre}"/>
-          <span class="wc-badge">WEB COMP</span>
         </div>
         <div class="wc-body">
           <div class="wc-name">${nombre}</div>
